@@ -1,0 +1,216 @@
+/* CSS Resst */
+*{
+    margin: 0px;
+    padding: 0px;
+}  
+html{
+    scroll-behavior: smooth;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center; 
+    position: sticky;
+    top: 0px; 
+    cursor: pointer;
+} 
+#navbar li a:hover, #navbar li a.active{
+    text-decoration: underline; color: rgb(8, 104, 104);
+} 
+
+
+/*navigation bar: logo and image  */
+#logo{
+    margin: 10px 34px;
+} 
+#logo img{
+    height: 78px;
+    margin: 7px 30px;
+} 
+/* list styling  */
+
+#navbar ul{
+    display: flex; 
+    font-family: 'Baloo Bhai 2', cursive;
+}  
+
+#navbar::before{
+    content: "";
+    background-color:; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80%;
+    z-index: -1; 
+    opacity: 0.9;
+}
+#navbar li{
+    /* color: white; */
+    list-style: none;
+    font-size: large;
+
+}
+#navbar li a{  
+    color:black`;
+    padding: 20px 24px; 
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar li a :hover{  
+    color: black;
+        background-color: white;  
+    } 
+    /* home section  */
+    #home{
+        display: flex; 
+        flex-direction: column;
+        padding: 3px 200px; 
+        height: 567px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #home::before{
+        content: "";
+    background: url(../img/background.jpg) no-repeat center center/cover;
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 108%;
+    z-index: -4; 
+    opacity: 0.92;
+    } 
+    #home h1{
+        color: white;
+        text-align: center; 
+        font-family: 'Bree Serif', serif;
+        
+    }
+    #home p{
+        color: white;
+        text-align: center; 
+        font-size: 1.rem; 
+        font-family: 'Bree Serif', serif;
+
+    } 
+    /* services section  */
+#services{
+    margin: 54px;
+    display: flex;
+
+}
+#services .box{
+    border: 4px solid rgb(37, 28, 48);
+    padding: 20px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: #f3cfcf;
+}
+#services .box img{
+    height: 160px; 
+    display: block;
+    margin: auto;
+
+}
+
+#services.box.p{ font-family: 'Bree Serif', serif; }
+#services{}
+#services{}
+ 
+/* client section  */
+#client-section{
+ 
+ position: relative;
+}  
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/img/customer-1251735_1920.jpg) no-repeat center center/cover; 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.client-item{
+    padding: 34px;
+}
+#client{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+} 
+#client img{
+    height: 214px;
+}
+/* contac-section  */
+#contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact::before{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+}
+#contact-box{
+  display: inline-block; 
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+} 
+#contact-box input,
+#contact-box textarea{
+    width: 87%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+} 
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    background: black; 
+    color: white; 
+    padding: 26px 480px; 
+    display: flex;
+}
+    /* utility class  */
+   .h-primary{
+       font-size: 2.5rem; 
+       padding: 13px; 
+       text-align: center; 
+       font-family: 'Bree Serif', serif; 
+
+   }  
+.h-secondary{
+    font-family: 'Bree Serif', serif; 
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+   .btn{
+       padding: 6px 20px;
+       border: 2px solid white;
+       background-color: rgb(116, 64, 64);
+       color: white;
+       margin: 17px ; 
+       font-size: 1.2rem;
+       border-radius: 12px; 
+       cursor: pointer;
+   }
+   .btn:hover{
+    background-color:gray;
+}
